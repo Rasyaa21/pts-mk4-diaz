@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15172B"
+    tools:context=".MainActivity11">
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="358dp"
+        android:layout_height="187dp"
+        app:srcCompat="@drawable/kupon_saya"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="359dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/informasi_akun"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="358dp"
+        android:layout_height="146dp"
+        app:srcCompat="@drawable/akun_pihak_ketiga"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        app:srcCompat="@drawable/back_home"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="644dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        app:srcCompat="@drawable/log_out"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="357dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/janto" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="143dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="-250dp"
+        android:layout_marginEnd="-280dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/imageView30"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        app:srcCompat="@drawable/qr_profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

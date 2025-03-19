@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#15172B"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="374dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arah" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="344dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ps" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/login" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="338dp"
+        android:layout_height="314dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="410dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnnih"
+        app:srcCompat="@drawable/or" />
+
+    <ImageButton
+        android:id="@+id/btnnih"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="false"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/sign_in" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
