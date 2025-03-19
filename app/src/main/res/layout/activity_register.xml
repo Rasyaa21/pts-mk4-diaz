@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#E9E9E9"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineLeft"
+        app:layout_constraintRight_toRightOf="@id/guidelineRight"
+        app:layout_constraintTop_toTopOf="@id/guideline">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/contentGuidelineLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/contentGuidelineRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/contentGuidelineTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.15" />
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hi Hello!"
+                android:textColor="#000000"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toTopOf="@id/contentGuidelineTop" />
+
+            <TextView
+                android:id="@+id/subtitleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Please enter your details"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/welcomeText" />
+
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/subtitleText" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/emailLabel" />
+
+            <View
+                android:id="@+id/emailDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/emailInput" />
+
+            <TextView
+                android:id="@+id/passwordLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/emailDivider" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/passwordLabel" />
+
+            <View
+                android:id="@+id/passwordDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/passwordInput" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_black_background"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/passwordDivider" />
+
+            <TextView
+                android:id="@+id/noAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="I Have Account"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/createAccountButton"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/loginButton" />
+
+            <TextView
+                android:id="@+id/createAccountButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Sign In"
+                android:textColor="#0000FF"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/noAccountText"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toEndOf="@+id/noAccountText" />
+
+            <View
+                android:id="@+id/leftDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="#CCCCCC"
+                app:layout_constraintEnd_toStartOf="@+id/orText"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/noAccountText" />
+
+            <TextView
+                android:id="@+id/orText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or Sign Up With"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/rightDivider"
+                app:layout_constraintStart_toEndOf="@+id/leftDivider"
+                app:layout_constraintTop_toTopOf="@id/leftDivider"
+                app:layout_constraintBottom_toBottomOf="@id/leftDivider" />
+
+            <View
+                android:id="@+id/rightDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:background="#CCCCCC"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toEndOf="@+id/orText"
+                app:layout_constraintTop_toTopOf="@id/leftDivider" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/googleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_white_outline"
+                android:drawableStart="@drawable/google_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Google"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/contentGuidelineRight"
+                app:layout_constraintStart_toStartOf="@id/contentGuidelineLeft"
+                app:layout_constraintTop_toBottomOf="@id/leftDivider" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

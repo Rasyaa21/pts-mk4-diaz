@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "524702353717",
+    "project_id": "mk4-pts",
+    "storage_bucket": "mk4-pts.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524702353717:android:6126b17e232fe55e85647c",
+        "android_client_info": {
+          "package_name": "com.example.papipum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524702353717-orev6fd66jg1masl4n0akdecoaearcg6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.papipum",
+            "certificate_hash": "2b9bc0f70022b17701941f801c52815c6c0a3193"
+          }
+        },
+        {
+          "client_id": "524702353717-9a5i5juls7f6ikg69ftde6glvoda85ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqpg55zdjNpn-0xjREfecME1YR5PMnTHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524702353717-9a5i5juls7f6ikg69ftde6glvoda85ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

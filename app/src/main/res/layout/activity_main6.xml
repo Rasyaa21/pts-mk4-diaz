@@ -9,7 +9,7 @@
     tools:context=".MainActivity6">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main"
+        android:id="@+id/main2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#15172B"
@@ -22,7 +22,7 @@
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/main"
+            app:layout_constraintStart_toStartOf="@+id/main2"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/all" />
 
